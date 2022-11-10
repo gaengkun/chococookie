@@ -35,8 +35,35 @@ a {
   }
 } */
 
-.wrap{
-  background:#2c2e35;
-  color:#fff;
-  height:100%;
+
+.space{
+  background:url('../images/space.jpg');
+}
+
+.mounten{
+  background:url('../images/mountain.jpg');
+}
+
+.ocean{
+  background:url('../images/ocean.jpg');
+}
+
+.winter{
+  justify-content: center;
+  background:url('../images/winter.jpg');
+}
+
+.main_visual > div{
+  background-size:cover;
+}
+
+.main_line_w{
+  width: 1px;
+}
+
+
+.main_list_btn > button{
+  padding:0 40px;
+  line-height: 62px;
+  font-weight: 100;
 }
