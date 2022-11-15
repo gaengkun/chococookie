@@ -51,6 +51,7 @@ a {
 .winter{
   justify-content: center;
   background:url('../images/winter.jpg');
+  flex-direction: column;
 }
 
 .main_visual > div{
@@ -61,9 +62,36 @@ a {
   width: 1px;
 }
 
+.main_list_btn{
+  margin-left:1px;
+  display:flex;
+  
+}
 
 .main_list_btn > button{
-  padding:0 40px;
-  line-height: 62px;
+  flex:1;
+  line-height:62px;
   font-weight: 100;
+  min-width: 7.5rem;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.main_list_btn > button:first-child{
+  border-left:none;
+}
+
+.main_list_btn > button:last-child{
+  border-right:none;
+}
+
+.main_list_btn > button:hover{
+  transition: all 0.3s;
+  background:rgba(255,255,255,0.8);
+  color: #222;
+}
+
+.trall03{
+  transition:  all 10s;
 }
