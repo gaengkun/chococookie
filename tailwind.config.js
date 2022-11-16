@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm':{'max': '514px'},
+      'sm':{'max': '520px'},
       // => @media (min-width: 640px) { ... }
 
       // 'md': {'max': '1535px'},

@@ -36,25 +36,31 @@ a {
 } */
 
 
+.min-w-320{
+  min-width: 320px;
+}
+
+.wrap{
+  min-width: 320px;
+}
 .space{
   background:url('../images/space.jpg');
+  background-size:cover;
 }
 
 .mounten{
+  
   background:url('../images/mountain.jpg');
+  background-size:cover;
 }
 
 .ocean{
   background:url('../images/ocean.jpg');
+  background-size:cover;
 }
 
 .winter{
-  justify-content: center;
   background:url('../images/winter.jpg');
-  flex-direction: column;
-}
-
-.main_visual > div{
   background-size:cover;
 }
 
@@ -90,8 +96,4 @@ a {
   transition: all 0.3s;
   background:rgba(255,255,255,0.8);
   color: #222;
-}
-
-.trall03{
-  transition:  all 10s;
 }
