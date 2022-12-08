@@ -21,7 +21,17 @@ module.exports = {
 
       // '2xl':{'max': '1535px'},
       // => @media (min-width: 1536px) { ... }
+    },
+    transitionDuration: {
+      '0': '0ms',
+      '1200': '1200ms',
+      '2000': '2000ms',
+    },
+
+    letterSpacing: {
+      wide2: '0.4em',
     }
+
   },
   plugins: [],
 }
