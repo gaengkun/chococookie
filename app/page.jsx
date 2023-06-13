@@ -39,7 +39,7 @@ function MainPage() {
 
    const [isDropMenuOpen, setDropMenuOpen] = useState(false);
 
-   const toggleDropMenu = (e: React.MouseEvent<HTMLLIElement>) => {
+   const toggleDropMenu = () => {
       e.stopPropagation(); // 이벤트 캡쳐링 방지
       setDropMenuOpen(prevState => !prevState);
    };
