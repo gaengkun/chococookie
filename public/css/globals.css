@@ -68,8 +68,10 @@ a {
    background-size: cover;
 }
 
-.main_line_w {
-   width: 1px;
+.flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .main_list_btn {

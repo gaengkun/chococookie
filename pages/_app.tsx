@@ -1,0 +1,13 @@
+// import App from "next/app";
+import type { AppProps /*, AppContext */ } from 'next/app';
+import { SessionProvider } from 'next-auth/react';
+
+function App({ Component, pageProps }: AppProps) {
+   return (
+      <SessionProvider session={pageProps.session}>
+         <Component {...pageProps} />
+      </SessionProvider>
+   );
+}
+
+export default App;

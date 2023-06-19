@@ -37,13 +37,6 @@ function MainPage() {
       setMenuType(type);
    };
 
-   const [isDropMenuOpen, setDropMenuOpen] = useState(false);
-
-   const toggleDropMenu = () => {
-      e.stopPropagation(); // 이벤트 캡쳐링 방지
-      setDropMenuOpen(prevState => !prevState);
-   };
-
    useEffect(() => {
       setVisualCount(1);
       setMainContent(true);
@@ -81,7 +74,7 @@ function MainPage() {
 
          <div className="flex min-w-320 flex-col items-center justify-center absolute z-30 left-0 top-0 w-full h-full text-white p-6">
             <div className=" w-36 h-36 shrink-0 border-solid block rounded-full bg-white"></div>
-            <div className="main_line_w h-20 bg-white"></div>
+            <div className="w-px h-20 bg-white content"></div>
             <div className="border-y w-full max-w-2xl">
                <div
                   className={`overflow-hidden ease-out duration-500 ${
@@ -103,7 +96,7 @@ function MainPage() {
                   </p>
                </div>
             </div>
-            <div className="main_line_w h-20 bg-white max-w-xs"></div>
+            <div className="w-px h-20 bg-white max-w-xs"></div>
             <div className="main_list_btn border rounded sm:flex-col">
                <button
                   type="button"
